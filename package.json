@@ -1,0 +1,15 @@
+{
+  "name": "prince_proxy",
+  "version": "1.0.0",
+  "description": "Proxy API for Prince services using Express and Render",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "node-fetch": "^3.3.2",
+    "cors": "^2.8.5"
+  }
+}
