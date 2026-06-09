@@ -38,7 +38,7 @@ app.get("/services", async (req, res) => {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams({
-        key: process.env.tunisie_API_KEY,
+        key: process.env.prince_API_KEY,
         action: "services"
       })
     });
@@ -58,7 +58,7 @@ app.post("/order", async (req, res) => {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams({
-        key: process.env.tunisie_API_KEY,
+        key: process.env.prince_API_KEY,
         action: "add",
         service,
         link,
@@ -95,7 +95,7 @@ app.get("/services", async (req, res) => {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams({
-        key: process.env.tunisie_API_KEY,
+        key: process.env.prince_API_KEY,
         action: "services"
       })
     });
@@ -115,7 +115,7 @@ app.post("/order", async (req, res) => {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams({
-        key: process.env.tunisie_API_KEY,
+        key: process.env.prince_API_KEY,
         action: "add",
         service,
         link,
@@ -152,7 +152,7 @@ app.get("/services", async (req, res) => {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams({
-        key: process.env.tunisie_API_KEY,
+        key: process.env.prince_API_KEY,
         action: "services"
       })
     });
@@ -172,7 +172,7 @@ app.post("/order", async (req, res) => {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams({
-        key: process.env.tunisie_API_KEY,
+        key: process.env.prince_API_KEY,
         action: "add",
         service,
         link,
@@ -209,7 +209,7 @@ app.post("/order", async (req, res) => {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams({
-        key: process.env.tunisie_API_KEY,
+        key: process.env.prince_API_KEY,
         action: "add",
         service,
         link,
