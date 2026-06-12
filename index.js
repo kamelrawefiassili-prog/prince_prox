@@ -49,8 +49,10 @@ app.post("/order", async (req, res) => {
     const data = await response.json();
     res.json(data);
   } catch (err) {
-    res.status(500).json({ error: err.message });
-  }
+  console.error("Error details:", err); // سيظهر لك الخطأ في لوحة تحكم Vercel
+  res.status(500).json({ error: err.message });
+}
+
 });
 
 // تشغيل السيرفر
