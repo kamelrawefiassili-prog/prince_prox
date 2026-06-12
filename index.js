@@ -8,7 +8,7 @@ app.use(express.json());
 
 // صفحة افتراضية
 app.get("/", (req, res) => {
-  res.send("✅ Prince Proxy API is running!");
+  res.send("✅ Prince Proxy API is running on Render!");
 });
 
 // جلب الخدمات
@@ -53,11 +53,6 @@ app.post("/order", async (req, res) => {
   }
 });
 
-// تشغيل السيرفر محلياً (أثناء التطوير فقط)
-if (process.env.NODE_ENV !== 'production') {
-  const PORT = process.env.PORT || 3000;
-  app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
-}
-
-// السطر الإضافي والضروري لمنصة Vercel لكي لا ينهار السيرفر
-export default app;
+// تشغيل السيرفر
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
