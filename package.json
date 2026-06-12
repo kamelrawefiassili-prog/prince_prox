@@ -1,5 +1,5 @@
 {
-  "name": "prince_proxy",
+  "name": "prince_prox",
   "version": "1.0.0",
   "description": "Proxy API for Prince services using Express and Render",
   "main": "index.js",
