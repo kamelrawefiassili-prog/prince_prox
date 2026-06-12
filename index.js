@@ -8,7 +8,7 @@ app.use(express.json());
 
 // صفحة افتراضية
 app.get("/", (req, res) => {
-  res.send("✅ Prince Proxy API is running on Render!");
+  res.send("✅ Prince Proxy API is running on Render  🎯!");
 });
 
 // جلب الخدمات
